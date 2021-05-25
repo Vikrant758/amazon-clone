@@ -10,7 +10,7 @@ function Home() {
                 <div className="homeRow">
                     <Product
                         id='12345'
-                        title='Great Stories for Children'
+                        title='Ruskin Bond - Stories of Wisdom'
                         price={1500}
                         rating={5}
                         img='https://m.media-amazon.com/images/I/711hfHGE+cL._AC_UL480_FMwebp_QL65_.jpg' />
