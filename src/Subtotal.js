@@ -21,11 +21,11 @@ function Subtotal() {
                 )}
                 decimalScale={2}
                 value={getBasketTotal(basket)}
-                displayType={'text'}
+                displayType={"text"}
                 thousandSeparator={true}
-                prefix={'₹'}
+                prefix={"₹"}
             />
-            <button onClick={e =>history.push('/payment')}>Proceed to checkout</button>
+            <button onClick={e => history.push('/payment')}>Proceed to checkout</button>
         </div>
     )
 }

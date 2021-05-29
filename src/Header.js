@@ -23,14 +23,16 @@ function Header() {
             <div className="headerNav">
                 <Link to={!user && '/login'}>
                     <div onClick={handleAuthentication} className="headerOption">
-                        <span className="headerOptionLineOne">Hello {!user ? 'Guest' : user.email }</span>
+                        <span className="headerOptionLineOne">Hello {!user ? 'Guest' : user.email}</span>
                         <span className="headerOptionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
-                <div className="headerOption">
-                    <span className="headerOptionLineOne">Returns</span>
-                    <span className="headerOptionLineTwo">& Orders</span>
-                </div>
+                <Link to='/orders'>
+                    <div className="headerOption">
+                        <span className="headerOptionLineOne">Returns</span>
+                        <span className="headerOptionLineTwo">& Orders</span>
+                    </div>
+                </Link>
                 <div className="headerOption">
                     <span className="headerOptionLineOne">Your</span>
                     <span className="headerOptionLineTwo">Prime</span>
